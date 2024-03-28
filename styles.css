@@ -51,6 +51,9 @@ section {
     padding: 20px;
 }
 
+.profile{
+    height: fit-content;
+}
 /* Profile picture and About Me styles */
 .profile-picture {
     margin-top: 50px;
@@ -91,6 +94,10 @@ section {
     font-size: 16px; /* Adjust font size as needed */
     margin-bottom: 28px;
 }
+.abt{
+    width:100%
+}
+
 h2{
     font-family: "Montserrat";
     font-optical-sizing: auto;
@@ -154,12 +161,42 @@ footer {
     font-size: 14px; /* Adjust font size as needed */
 }
 /* Media query for mobile responsiveness */
-@media screen and (max-width: 400px) {
-    .about-me {
-        order: 2; /* Change order for mobile view */
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 440px) {
+    header nav ul li {
+        margin-right: 10px; /* Reduced margin for better spacing */
+    }
+    .profile-picture, .about-me {
+        margin-top: 0; /* Removed margin-top for better alignment */
     }
 
-    .profile-picture {
-        order: 1; /* Change order for mobile view */
+    .name {
+        font-size: 20px; /* Further reduced font size for better mobile view */
+    }
+
+    .college, .intro {
+        font-size: 12px; /* Further reduced font size for better mobile view */
+        width: 130%;
+    }
+
+    .social-icons a {
+        font-size: 16px; /* Reduced font size for better mobile view */
+    }
+
+    .copy {
+        font-size: 10px; /* Further reduced font size for better mobile view */
+    }
+
+    main {
+        width: 90%; /* Adjusted width for better mobile view */
+    }
+    .abt{
+        width: 190%;        
+    }
+    h2{
+        font-size: 20px;
+    }
+    .about-list{
+        font-size: 14px;
     }
 }
