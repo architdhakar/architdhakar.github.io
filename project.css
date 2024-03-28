@@ -117,12 +117,8 @@ h2{
     font-size: 14px; /* Adjust font size as needed */
 }
 /* Media query for mobile responsiveness */
-@media screen and (max-width: 400px) {
-    .about-me {
-        order: 2; /* Change order for mobile view */
-    }
-
-    .profile-picture {
-        order: 1; /* Change order for mobile view */
-    }
+@media screen and (max-width: 450px) {
+    main{
+        width:80%;}
+        
 }
