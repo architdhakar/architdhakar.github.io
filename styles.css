@@ -63,7 +63,7 @@ section {
 
 .profile-picture img {
     max-width: 40%;
-    border-radius: 10%;
+    border-radius: 100%;
 }
 .about-me {
     flex: 2;
