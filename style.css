@@ -1,0 +1,21 @@
+body {
+    font-family: "Montserrat"; 
+}
+.container {
+    width: 60%;
+    margin: 0 auto; /* This centers the container horizontally */
+}
+
+.profile-picture {
+    max-width: 55%; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.pdf{
+    max-width: 2.5%;
+    height: auto;
+}
+@media screen and (max-width: 440px) {
+    .container{
+        width:90%;
+    }
+}
