@@ -1,64 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archit Dhakar</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Hello, world!</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
+    <header style="border-bottom: 1px solid #e0dede;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between">
+            <a class="navbar-brand mx-5 font-weight-light" href="#">Archit Dhakar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto"> <!-- Changed class to ml-auto for right alignment -->
+                    <li class="nav-item mx-2 active font-weight-light">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-2 font-weight-light">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item mx-2 font-weight-light">
+                        <a class="nav-link" href="blogs.html">Blogs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item font-weight-light">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    
+                </ul>
+            </div>
         </nav>
     </header>
+    <div class="container">
+        <!-- First row for About Me and Profile Picture -->
+        <div class="row my-4">
+            <div class="col-md-8">
+                <p>
+                    <div class="h2 font-weight-light">Archit Dhakar</div>
+                    <div class="h6 font-weight-light">B.Tech at IIT Gandhinagar, Mechanical Engineering</div>
+                    <div class="h6 font-weight-light">Hello, I'm Archit Dhakar, studying mechanical engineering at IIT Gandhinagar</div>
+                </p>
+            </div>
+            <div class="col-md-4 my-4">
+                <img src="profile-picture.jpg" alt="Profile Picture" class="img-fluid rounded-circle profile-picture">
+            </div>
+        </div>
+        <!-- Second row for About List -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="h2 font-weight-light"><span>&#x1F466;</span> About Me:</div>
+                <ul class="mb-5">
+                    <li class="h6 font-weight-light">Passionate about making projects and exploring new technologies.</li>
+                    <li class="h6 font-weight-light">Enthusiastic about machine learning and constantly learning new algorithms and techniques.</li>
+                    <li class="h6 font-weight-light">Enjoy content writing and blogging, sharing insights and experiences with the community.</li>
+                    <li class="h6 font-weight-light">Actively involved in mentoring JEE aspirants, providing guidance and support to help them achieve their goals.</li>
+                    <!-- Add more points as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer style="border-top: 1px solid #e0dede;">
+        <div class="container d-flex justify-content-center my-3">
+            <ul class="list-inline">
+                <li class="list-inline-item mx-3">
+                    <a href="https://github.com/architdhakar" target="_blank" style="color: rgb(74, 71, 71);">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item mx-3">
+                    <a href="mailto:architdhakar469@gmail.com" target="_blank" style="color: rgb(74, 71, 71);">
+                        <i class="far fa-envelope fa-3x"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item mx-3">
+                    <a href="https://in.linkedin.com/in/archit-dhakar-b6b85524a" target="_blank" style="color: rgb(74, 71, 71);">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="h6 font-weight-light d-flex justify-content-center">
+            &copy; 2024 Archit Dhakar. All rights reserved.
+        </div>        
+    </footer>
+    
     
 
-    <main>
-        <section id="about">
-            <div class="about-me">
-                <div class="name">Archit Dhakar</div>
-                <div class="college">B.Tech at IIT Gandhinagar, Mechanical Engineering</div>
-                <div class="intro">Hello, I'm Archit Dhakar, studying mechanical engineering at IIT Gandhinagar</div>
-                <div class="abt">
-                    <h2><span>&#x1F466;</span> About Me:</h2>
-                    <ul class="about-list">
-                    <li>Passionate about making projects and exploring new technologies.</li>
-                    <li>Enthusiastic about machine learning and constantly learning new algorithms and techniques.</li>
-                    <li>Enjoy content writing and blogging, sharing insights and experiences with the community.</li>
-                    <li>Actively involved in mentoring JEE aspirants, providing guidance and support to help them achieve their goals.</li>
-                    <!-- Add more points as needed -->
-                    </ul>
-                </div>   
-            </div>
-        </section>
-        <section class="profile">
-            <div class="profile-picture">
-                <img src="profile-picture.jpg" alt="Profile Picture">
-            </div>
-        </section>
-    </main>
 
-    <footer>
-        <ul class="social-icons">
-            <li><a href="https://github.com/architdhakar" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="mailto:architdhakar469@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
-            <li><a href="https://in.linkedin.com/in/archit-dhakar-b6b85524a" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-    </footer>
-    <div class="copy">&copy; 2024 Archit Dhakar. All rights reserved.</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-
