@@ -17,12 +17,12 @@ body.dark-mode {
 }
 
 body.light-mode .navbar {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
 }
 
 body.dark-mode .navbar {
-    background-color: black;
+    background-color: rgb(84, 80, 80);
     color: white;
 }
 
@@ -70,20 +70,6 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(12px);
-}
-
-.navbar {
-    transition: background-color 0.5s, color 0.5s;
-}
-
-body.light-mode .navbar {
-    background-color: white;
-    color: black;
-}
-
-body.dark-mode .navbar {
-    background-color: black;
-    color: white;
 }
 
 
