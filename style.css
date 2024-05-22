@@ -1,6 +1,94 @@
 body {
     font-family: "Montserrat"; 
+    transition: background-color 0.5s, color 0.5s;
 }
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: rgb(51, 49, 49);
+    color: white;
+}
+
+.navbar {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.light-mode .navbar {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode .navbar {
+    background-color: black;
+    color: white;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 16px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(12px);
+}
+
+.navbar {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.light-mode .navbar {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode .navbar {
+    background-color: black;
+    color: white;
+}
+
+
+
+
 .container {
     width: 60%;
     margin: 0 auto; /* This centers the container horizontally */
